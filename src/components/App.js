@@ -1,31 +1,30 @@
 import React from "react";
 import Card from "./Card";
+import movies from "../movies";
 
 const App = () => {
-    return (
-        <div>
-            <h1 className="heading">My movies</h1>
-            <Card
-                name="The social network"
-                imgURL="https://pics.filmaffinity.com/The_Social_Network-460155430-large.jpg"
-                liked: "90%"
-                year: "October 1, 2010"
-            />
-
-            <Card
-                name="Inception"
-                imgURL="https://www.themoviedb.org/t/p/original/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg"
-                liked: "88%"
-                year: "July 8, 2010"
-            />
-
-            <Card
-                name="Gravity"
-                imgURL="https://upload.wikimedia.org/wikipedia/en/f/f6/Gravity_Poster.jpg"
-                liked: "79%"
-                year: "October 4, 2013"
-            />
-        </div>
-    )
-}
-export default App
+  return (
+    <div>
+      <h1 className="heading">My movies</h1>
+      <Card
+        name={movies[0].name}
+        imgURL={movies[0].imgURL}
+        liked={movies[0].liked}
+        year={movies[0].year}
+      />
+      <Card
+        name={movies[1].name}
+        imgURL={movies[1].imgURL}
+        liked={movies[1].liked}
+        year={movies[1].year}
+      />
+      <Card
+        name={movies[2].name}
+        imgURL={movies[2].imgURL}
+        liked={movies[2].liked}
+        year={movies[2].year}
+      />
+    </div>
+  );
+};
+export default App;

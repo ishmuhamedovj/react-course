@@ -1,9 +1,8 @@
 import React from "react";
 
-const Card = (props) => {
+const  Card = (props) => {
     return (
         <div>
-            <h1 className="heading">My movies</h1>
             <div className="card">
                 <div className="top">
                     <h2>{props.name}</h2>
